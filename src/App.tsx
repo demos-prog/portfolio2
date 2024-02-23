@@ -30,9 +30,11 @@ function App() {
 
   return (
     <div className={css.container}>
-      <header className={scrollDirection ? css.nav_up : ''}>
-        <h1>Dmitry Burlyko</h1>
-      </header>
+      <div className={scrollDirection ? `${css.h_wrap} ${css.nav_up}` : css.h_wrap}>
+        <header>
+          <h1>Dmitry Burlyko</h1>
+        </header>
+      </div>
       <div className={css.space}></div>
 
       <div className={css.item}

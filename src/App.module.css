@@ -1,5 +1,5 @@
 :root {
-  --grad-color: #fcac87;
+  --grad-color: linear-gradient(to right, red, purple);
 }
 
 .container {
@@ -8,19 +8,31 @@
   background-color: black;
 }
 
-header {
+.h_wrap {
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--grad-color);
   position: fixed;
-  top: 20px;
-  left: auto;
+  top: 10px;
+  left: 10%;
   transition: top 0.2s ease-in-out;
   width: 80%;
+  padding: 3px;
+  border-radius: 13px;
+}
+
+header {
+  width: 100%;
+  color: #FFF;
   padding: 10px 20px;
   border-radius: 10px;
-  background-color: white;
+  background-color: black;
 }
 
 .nav_up {
-  top: -40px;
+  top: -45px;
 }
 
 .space {
