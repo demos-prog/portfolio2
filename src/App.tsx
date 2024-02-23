@@ -7,6 +7,11 @@ function App() {
   const [y, setY] = useState(document.scrollingElement ? document.scrollingElement.scrollHeight : 0);
   const [scrollDirection, setScrollDirection] = useState(false);
 
+
+  AOS.init({
+    duration: 1200,
+  })
+
   const handleScroll = useCallback(() => {
     if (y > window.scrollY) {
       setScrollDirection(false);
@@ -16,16 +21,14 @@ function App() {
     setY(window.scrollY)
   }, [y]);
 
+
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
   }, [handleScroll]);
-
-  AOS.init({
-    duration: 1200,
-  })
 
 
   return (

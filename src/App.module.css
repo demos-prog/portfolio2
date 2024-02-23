@@ -1,5 +1,10 @@
 :root {
-  --grad-color: linear-gradient(to right, red, purple);
+  --grad-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  --font: "Roboto Condensed", sans-serif;
+}
+
+* {
+  font-family: var(--font);
 }
 
 .container {
@@ -14,6 +19,7 @@
   align-items: center;
   justify-content: center;
   background: var(--grad-color);
+  background-size: 300% 300%;
   position: fixed;
   top: 10px;
   left: 10%;
@@ -21,6 +27,7 @@
   width: 80%;
   padding: 3px;
   border-radius: 13px;
+  animation: gradient 5s ease infinite;
 }
 
 header {
@@ -42,9 +49,19 @@ header {
 .item {
   width: 200px;
   height: 200px;
-  margin: 50px auto;
   background: #ccc;
-  text-align: center;
-  color: #FFF;
-  font-size: 3em;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
