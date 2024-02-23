@@ -1,0 +1,38 @@
+:root {
+  --grad-color: #fcac87;
+}
+
+.container {
+  width: 100%;
+  min-height: 100vh;
+  background-color: black;
+}
+
+header {
+  position: fixed;
+  top: 20px;
+  left: auto;
+  transition: top 0.2s ease-in-out;
+  width: 80%;
+  padding: 10px 20px;
+  border-radius: 10px;
+  background-color: white;
+}
+
+.nav_up {
+  top: -40px;
+}
+
+.space {
+  height: 120vh;
+}
+
+.item {
+  width: 200px;
+  height: 200px;
+  margin: 50px auto;
+  background: #ccc;
+  text-align: center;
+  color: #FFF;
+  font-size: 3em;
+}
