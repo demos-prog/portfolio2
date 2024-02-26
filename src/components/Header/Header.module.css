@@ -14,7 +14,8 @@
   transition: top 0.2s ease-in-out;
   width: 80%;
   padding: 3px;
-  border-radius: 13px;
+  border-top-right-radius: 13px;
+  border-bottom-left-radius: 13px;
   animation: var(--grad-animation);
 }
 
@@ -25,7 +26,8 @@ header {
   width: 100%;
   color: #FFF;
   padding: 10px 20px;
-  border-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   background-color: black;
 }
 
@@ -43,7 +45,8 @@ header {
   align-items: center;
   gap: 10px;
   border: 1px solid #4d85ff;
-  border-radius: 8px;
+  border-top-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .selectedLng {
@@ -51,7 +54,8 @@ header {
   color: rgb(0, 0, 0);
   background-color: #36fdaa;
   padding: 2px;
-  border-radius: 3px;
+  border-top-right-radius: 3px;
+  border-bottom-left-radius: 3px;
   transition: .2s ease-in-out;
 }
 

@@ -8,7 +8,8 @@
 
 .item_hover {
   padding: 3px 5px;
-  border-radius: 7px;
+  border-top-right-radius: 7px;
+  border-bottom-left-radius: 7px;
 }
 
 .item img {
