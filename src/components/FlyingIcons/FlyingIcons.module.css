@@ -24,8 +24,8 @@
     left: -200%;
   }
 
-  50% {
-    transform: rotate(180deg);
+  30% {
+    transform: rotate(90deg);
   }
 
   100% {

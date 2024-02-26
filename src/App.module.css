@@ -4,7 +4,7 @@
   --color3: #23a6d5;
   --color4: #23d5ab;
   --color1-filter: brightness(0) saturate(100%) invert(71%) sepia(51%) saturate(5300%) hue-rotate(329deg) brightness(103%) contrast(87%);
-  --color2-filter:brightness(0) saturate(100%) invert(36%) sepia(53%) saturate(1724%) hue-rotate(303deg) brightness(92%) contrast(98%);
+  --color2-filter: brightness(0) saturate(100%) invert(36%) sepia(53%) saturate(1724%) hue-rotate(303deg) brightness(92%) contrast(98%);
   --color3-filter: brightness(0) saturate(100%) invert(60%) sepia(99%) saturate(1242%) hue-rotate(161deg) brightness(86%) contrast(94%);
   --color4-filter: brightness(0) saturate(100%) invert(58%) sepia(89%) saturate(361%) hue-rotate(116deg) brightness(100%) contrast(94%);
   --grad-color: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color4));
@@ -35,7 +35,21 @@
   background: #FFF;
 }
 
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
 
 @keyframes gradient {
   0% {
@@ -51,6 +65,6 @@
   }
 }
 
-.space{
+.space {
   height: 300vh;
 }

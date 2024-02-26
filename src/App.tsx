@@ -28,6 +28,7 @@ function App() {
       </div> */}
         <div className={css.space}></div>
       </div>
+      
       <Suspense fallback={null}>
         <LazyFlyingIcons />
       </Suspense>
