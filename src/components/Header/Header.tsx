@@ -68,7 +68,6 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
           <h1>Burlyko Dmitry</h1>
         )}
 
-
         <nav>
           <ul id={css.navBar}>
             <LiItem lang={lang} href={'#home_section'} ruName={'Главная'} engName={'Home'} img={homeIcon} color={'#ee7752'} />

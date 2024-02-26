@@ -34,6 +34,30 @@ header {
 h1 {
   font-family: artFont;
   font-size: 20px;
+  position: relative;
+  white-space: nowrap;
+}
+
+h1::before {
+  transform: rotate(38deg);
+  position: absolute;
+  content: '';
+  left: -108px;
+  top: -5px;
+  background-image: url('../../assets/images/stamp_icon.svg');
+  background-repeat: no-repeat;
+  filter: invert();
+  width: 150px;
+  height: 150px;
+}
+
+h1::after {
+  transform: rotate(30deg);
+  position: absolute;
+  content: 'Front-End';
+  font-size: 12px;
+  left: -72px;
+  top: 40px;
 }
 
 .nav_up {
