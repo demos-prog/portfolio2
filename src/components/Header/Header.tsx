@@ -24,7 +24,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
   }
 
   const getLangname = () => {
-    return lang === 'ru' ? 'Рус' : 'Eng';
+    return lang === 'ru' ? 'Rus' : 'Eng';
   }
 
   useEffect(() => {
@@ -43,9 +43,9 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
           <h1>Burlyko Dmitry</h1>
         )}
         <div className={css.lang_wrap} onClick={handleLang}>
-          <div className={css.langItem}>Рус</div>
+          <div className={css.langItem}>Rus</div>
           <div className={css.langItem}>Eng</div>
-          <div style={lang === 'ru' ? { left: '3px' } : {left: '37px'}} className={css.selectedLng}>{getLangname()}</div>
+          <div style={lang === 'ru' ? { left: '3px' } : {left: '39px'}} className={css.selectedLng}>{getLangname()}</div>
         </div>
       </header>
     </div>
