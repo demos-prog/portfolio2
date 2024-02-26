@@ -1,0 +1,18 @@
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  transition: .2s;
+  cursor: pointer;
+}
+
+.item_hover {
+  padding: 3px 5px;
+  border-radius: 7px;
+}
+
+.item img {
+  width: 30px;
+  height: 30px;
+  filter: invert();
+}

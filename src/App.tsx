@@ -5,7 +5,7 @@ import css from './App.module.css';
 const LazyHeader = React.lazy(() => import('./components/Header/Header'));
 
 function App() {
-  const [lang, setLang] = useState<'ru' | 'eng'>('ru');
+  const [lang, setLang] = useState<'ru' | 'eng'>('eng');
 
 
   AOS.init({
@@ -17,11 +17,11 @@ function App() {
     <div className={css.container}>
       <LazyHeader lang={lang} setLang={setLang} />
 
-      <div className={css.item}
+      {/* <div className={css.item}
         data-aos="fade-right"
         data-aos-anchor-placement="top-bottom"
       >
-      </div>
+      </div> */}
 
     </div>
   );

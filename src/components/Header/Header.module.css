@@ -58,3 +58,8 @@ header {
 .langItem {
   opacity: .5;
 }
+
+#navBar{
+  display: flex;
+  gap: 20px;
+}
