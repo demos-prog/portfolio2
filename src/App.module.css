@@ -1,5 +1,6 @@
 :root {
   --grad-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+  --grad-animation: gradient 5s ease infinite;
   --font: "Roboto Condensed", sans-serif;
 }
 
@@ -13,43 +14,10 @@
   background-color: black;
 }
 
-.h_wrap {
-  z-index: 100;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: var(--grad-color);
-  background-size: 300% 300%;
-  position: fixed;
-  top: 10px;
-  left: 10%;
-  transition: top 0.2s ease-in-out;
-  width: 80%;
-  padding: 3px;
-  border-radius: 13px;
-  animation: gradient 5s ease infinite;
-}
-
-header {
-  width: 100%;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 10px;
-  background-color: black;
-}
-
-.nav_up {
-  top: -45px;
-}
-
-.space {
-  height: 120vh;
-}
-
 .item {
   width: 200px;
   height: 200px;
-  background: #ccc;
+  background: #FFF;
 }
 
 @keyframes gradient {
