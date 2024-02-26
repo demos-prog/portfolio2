@@ -3,6 +3,7 @@ import AOS from 'aos';
 import css from './App.module.css';
 
 const LazyHeader = React.lazy(() => import('./components/Header/Header'));
+const LazyFlyingIcons = React.lazy(() => import('./components/FlyingIcons/FlyingIcons'));
 
 function App() {
   const [lang, setLang] = useState<'ru' | 'eng'>('eng');
@@ -14,18 +15,23 @@ function App() {
 
 
   return (
-    <div className={css.container}>
+    <>
       <Suspense fallback={null}>
         <LazyHeader lang={lang} setLang={setLang} />
       </Suspense>
 
-      {/* <div className={css.item}
+      <div className={css.container}>
+        {/* <div className={css.item}
         data-aos="fade-right"
         data-aos-anchor-placement="top-bottom"
-      >
+        >
       </div> */}
-
-    </div>
+        <div className={css.space}></div>
+      </div>
+      <Suspense fallback={null}>
+        <LazyFlyingIcons />
+      </Suspense>
+    </>
   );
 }
 
