@@ -1,9 +1,9 @@
 :root {
-  --grad-color: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
-  --color1:#ee7752;
-  --color2:#e73c7e;
+  --color1: #ee7752;
+  --color2: #e73c7e;
   --color3: #23a6d5;
   --color4: #23d5ab;
+  --grad-color: linear-gradient(-45deg, var(--color1), var(--color2), var(--color3), var(--color4));
   --grad-animation: gradient 5s ease infinite;
   --font: "Roboto Condensed", sans-serif;
 }
