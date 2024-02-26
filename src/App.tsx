@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { Suspense, useState } from 'react';
 import AOS from 'aos';
 import css from './App.module.css';
 
@@ -15,7 +15,9 @@ function App() {
 
   return (
     <div className={css.container}>
-      <LazyHeader lang={lang} setLang={setLang} />
+      <Suspense fallback={null}>
+        <LazyHeader lang={lang} setLang={setLang} />
+      </Suspense>
 
       {/* <div className={css.item}
         data-aos="fade-right"
