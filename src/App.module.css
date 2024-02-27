@@ -3,6 +3,7 @@
   --color2: #e73c7e;
   --color3: #23a6d5;
   --color4: #23d5ab;
+  --yellow: #FFF44F;
   --color1-filter: brightness(0) saturate(100%) invert(71%) sepia(51%) saturate(5300%) hue-rotate(329deg) brightness(103%) contrast(87%);
   --color2-filter: brightness(0) saturate(100%) invert(36%) sepia(53%) saturate(1724%) hue-rotate(303deg) brightness(92%) contrast(98%);
   --color3-filter: brightness(0) saturate(100%) invert(60%) sepia(99%) saturate(1242%) hue-rotate(161deg) brightness(86%) contrast(94%);

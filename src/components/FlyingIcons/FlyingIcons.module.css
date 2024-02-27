@@ -131,7 +131,7 @@
 #contacts {
   width: 50px;
   height: 180px;
-  background-color: #FFF44F;
+  background-color: var(--yellow);
   border-bottom-right-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -139,7 +139,7 @@
   justify-content: space-around;
 }
 
-.contImage{
+.contImage {
   width: 35px;
   height: 35px;
   cursor: pointer;
@@ -150,8 +150,8 @@
   border-bottom-right-radius: 10px;
   width: 30px;
   height: 100px;
-  background-color: #FFF44F;
-  border: 2px solid #FFF44F;
+  background-color: var(--yellow);
+  border: 2px solid var(--yellow);
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -168,4 +168,3 @@
   font-size: 15px;
   transform: rotate(-90deg);
 }
-

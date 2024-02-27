@@ -1,5 +1,6 @@
 .item {
   display: flex;
+  flex-wrap: nowrap;
   align-items: center;
   gap: 10px;
   transition: .2s;
@@ -16,4 +17,8 @@
   width: 30px;
   height: 30px;
   filter: invert();
+}
+
+.text{
+  white-space: nowrap;
 }

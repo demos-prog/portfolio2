@@ -45,7 +45,7 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
     >
       <img style={{ filter: getColor() }} src={img} alt={engName} />
       {isHovered && (
-        <a href={href} style={{ color: color }}>{lang === 'ru' ? ruName : engName}</a>
+        <a href={href} style={{ color: color }}><span className={css.text}>{lang === 'ru' ? ruName : engName}</span></a>
       )}
     </li>
   );

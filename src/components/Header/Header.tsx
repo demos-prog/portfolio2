@@ -76,6 +76,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
             <LiItem lang={lang} href={'#contacts_section'} ruName={'Контакты'} engName={'Contacts'} img={contactIcon} color={'#23d5ab'} />
           </ul>
         </nav>
+        
         <div className={css.lang_wrap} onClick={handleLang}        >
           <div className={css.langItem}>Rus</div>
           <div className={css.langItem}>Eng</div>
