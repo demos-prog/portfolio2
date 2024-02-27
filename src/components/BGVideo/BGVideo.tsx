@@ -1,5 +1,5 @@
 import React from 'react';
-import video from '../../assets/videos/video (2160p).mp4';
+import video from '../../assets/videos/fog.mp4';
 import css from './BGVideo.module.css';
 
 
