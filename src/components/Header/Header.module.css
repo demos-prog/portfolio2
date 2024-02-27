@@ -11,12 +11,19 @@
   position: fixed;
   top: 10px;
   left: 10%;
-  transition: top 0.2s ease-in-out;
+  transition: .3s;
   width: 80%;
   padding: 3px;
   border-top-right-radius: 13px;
   border-bottom-left-radius: 13px;
   animation: var(--grad-animation);
+  opacity: 1;
+}
+
+.nav_up {
+  transition: .3s;
+  opacity: 0;
+  top: -150px;
 }
 
 header {
@@ -58,10 +65,7 @@ h1::after {
   font-size: 12px;
   left: -72px;
   top: 40px;
-}
 
-.nav_up {
-  top: -150px;
 }
 
 .lang_wrap {
