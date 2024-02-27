@@ -38,6 +38,7 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
 
   const handleSmoothScroll = () => {
     const element = document.querySelector(href);
+    
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',

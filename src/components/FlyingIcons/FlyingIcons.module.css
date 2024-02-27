@@ -1,4 +1,5 @@
 #wrap {
+  z-index: -50;
   position: fixed;
   top: 0;
   left: 0;
@@ -117,54 +118,4 @@
     left: 180%;
     transform: rotate(180deg);
   }
-}
-
-#contactsWrap {
-  z-index: 10;
-  user-select: none;
-  position: absolute;
-  top: 45%;
-  display: flex;
-  transition: .2s;
-}
-
-#contacts {
-  width: 50px;
-  height: 180px;
-  background-color: var(--yellow);
-  border-bottom-right-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.contImage {
-  width: 35px;
-  height: 35px;
-  cursor: pointer;
-}
-
-#contactsBtn {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  width: 30px;
-  height: 100px;
-  background-color: var(--yellow);
-  border: 2px solid var(--yellow);
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  gap: 26px;
-  flex-direction: column;
-  transition: .2s;
-}
-
-#contactsBtn:hover {
-  border: 2px solid var(--color3);
-}
-
-#contactText {
-  font-size: 15px;
-  transform: rotate(-90deg);
 }

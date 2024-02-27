@@ -20,12 +20,16 @@
 
 * {
   font-family: var(--font);
+  scroll-behavior: smooth;
 }
 
-.container {
-  position: relative;
+.backGround {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   min-height: 100vh;
+  height: 100%;
   background-color: black;
   z-index: -100;
 }
@@ -64,8 +68,45 @@
   height: 300vh;
 }
 
-.item {
-  width: 200px;
-  height: 200px;
-  background: #FFF;
+.homeSection {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  color: white;
+}
+
+#hiTextWr {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+
+#hand {
+  animation: handWaving 2s linear infinite;
+  transform-origin: 100% 100% 0;
+  width: 25px;
+  height: 25px;
+}
+
+@keyframes handWaving {
+
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+
+  20%,
+  60% {
+    transform: rotate(-30deg);
+  }
+
+  40%,
+  80% {
+    transform: rotate(30deg);
+  }
 }

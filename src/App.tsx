@@ -1,4 +1,5 @@
 import React, { Suspense, useState } from 'react';
+import handIcon from '../src/assets/images/waving_hand.png';
 import AOS from 'aos';
 import css from './App.module.css';
 
@@ -16,30 +17,37 @@ function App() {
 
   return (
     <>
+      {/* z-index: -100; */}
+      <div className={css.backGround} />
+
+      {/* z-index: -50; */}
+      <Suspense fallback={null}>
+        <LazyFlyingIcons />
+      </Suspense>
+
+      {/* z-index: 100 */}
       <Suspense fallback={null}>
         <LazyHeader lang={lang} setLang={setLang} />
       </Suspense>
 
-      <div className={css.container}>
-        <section id='home_section' >
 
-        </section>
-        <section id='about_section'>
-          {/* <div className={css.item}
+      <section id='home_section' className={css.homeSection}>
+        <div id={css.hiTextWr}>
+          <h2>Hi there!</h2>
+          <img id={css.hand} src={handIcon} alt="hello" />
+        </div>
+      </section>
+      <section id='about_section'>
+        {/* <div className={css.item}
             data-aos="fade-right"
             data-aos-anchor-placement="top-bottom"
           >
 
           </div> */}
-        </section>
-        <section id='projects_section'>        </section>
-        <section id='contacts_section'>        </section>
-        <div className={css.space}></div>
-      </div>
-
-      <Suspense fallback={null}>
-        <LazyFlyingIcons />
-      </Suspense>
+      </section>
+      <section id='projects_section'>        </section>
+      <section id='contacts_section'>        </section>
+      <div className={css.space}></div>
     </>
   );
 }
