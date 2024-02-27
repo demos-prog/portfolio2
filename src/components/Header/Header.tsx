@@ -102,7 +102,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
           ) : (
             <img src={arrowRight} alt="close" />
           )}
-          <div id={css.contactText}>Contacts</div>
+          <div id={css.contactText}>{lang === 'ru' ? 'Контакты' : 'Contacts'}</div>
         </div>
       </div>
     </>

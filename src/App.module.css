@@ -64,12 +64,9 @@
   }
 }
 
-.space {
-  height: 300vh;
-}
-
 .homeSection {
   min-height: 100vh;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -109,4 +106,18 @@
   80% {
     transform: rotate(30deg);
   }
+}
+
+#homeWrap {
+  text-wrap: stable;
+  font-size: 20px;
+  width: 70%;
+  height: 40vh;
+  padding: 20px;
+  background-color: rgba(0, 0, 0, .7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 10px;
 }
