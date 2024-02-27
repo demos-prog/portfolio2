@@ -32,27 +32,9 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
     return lang === 'ru' ? 'Rus' : 'Eng';
   }
 
+
   useEffect(() => {
     window.addEventListener("scroll", handleScroll);
-
-    // scroll to the sections - start
-    const anchors = document.querySelectorAll('a.scroll_to')
-
-    for (const anchor of anchors) {
-      anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-
-        const blockID = anchor.getAttribute('href');
-        const element = document.querySelector(blockID!);
-        if (element) {
-          element.scrollIntoView({
-            behavior: 'smooth',
-            block: 'start'
-          });
-        }
-      })
-    }
-    // scroll to the sections - end
 
     return () => {
       window.removeEventListener("scroll", handleScroll);
@@ -76,7 +58,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
             <LiItem lang={lang} href={'#contacts_section'} ruName={'Контакты'} engName={'Contacts'} img={contactIcon} color={'#23d5ab'} />
           </ul>
         </nav>
-        
+
         <div className={css.lang_wrap} onClick={handleLang}        >
           <div className={css.langItem}>Rus</div>
           <div className={css.langItem}>Eng</div>

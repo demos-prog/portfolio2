@@ -36,17 +36,28 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
     }
   }
 
+  const handleSmoothScroll = () => {
+    const element = document.querySelector(href);
+    if (element) {
+      element.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
+
   return (
     <li
+      onClick={handleSmoothScroll}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
-      className={isHovered ? `${css.item} ${css.item_hover}` : css.item}
+      className={isHovered ? `${css.item} ${css.item_hover} scroll_to` : `${css.item} scroll_to`}
       style={isHovered ? { border: `1px solid ${color}` } : {}}
     >
-      <img style={{ filter: getColor() }} src={img} alt={engName} />
-      {isHovered && (
-        <a href={href} style={{ color: color }}><span className={css.text}>{lang === 'ru' ? ruName : engName}</span></a>
-      )}
+      <a href={href} style={{ color: color }}>
+        <img style={{ filter: getColor() }} src={img} alt={engName} />
+        {isHovered && (lang === 'ru' ? ruName : engName)}
+      </a>
     </li>
   );
 };

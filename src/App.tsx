@@ -21,14 +21,19 @@ function App() {
       </Suspense>
 
       <div className={css.container}>
-        {/* <div className={css.item}
-        data-aos="fade-right"
-        data-aos-anchor-placement="top-bottom"
-        >
-      </div> */}
+        {/* <section id={css.home_section} > */}
+        <section id='home_section' >
+          {/* <div className={css.item}
+            data-aos="fade-right"
+            data-aos-anchor-placement="top-bottom"
+          >
+
+          </div> */}
+          asd
+        </section>
         <div className={css.space}></div>
       </div>
-      
+
       <Suspense fallback={null}>
         <LazyFlyingIcons />
       </Suspense>
