@@ -23,7 +23,7 @@
   scroll-behavior: smooth;
 }
 
-.backGround {
+#backGround {
   position: fixed;
   top: 0;
   left: 0;

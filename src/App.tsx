@@ -5,6 +5,7 @@ import css from './App.module.css';
 
 const LazyHeader = React.lazy(() => import('./components/Header/Header'));
 const LazyFlyingIcons = React.lazy(() => import('./components/FlyingIcons/FlyingIcons'));
+const LazyVideo = React.lazy(() => import('./components/BGVideo/BGVideo'));
 
 function App() {
   const [lang, setLang] = useState<'ru' | 'eng'>('eng');
@@ -18,7 +19,10 @@ function App() {
   return (
     <>
       {/* z-index: -100; */}
-      <div className={css.backGround} />
+      <Suspense fallback={<div id={css.backGround} />}>
+        <LazyVideo />
+      </Suspense>
+
 
       {/* z-index: -50; */}
       <Suspense fallback={null}>
