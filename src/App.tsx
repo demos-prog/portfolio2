@@ -21,16 +21,19 @@ function App() {
       </Suspense>
 
       <div className={css.container}>
-        {/* <section id={css.home_section} > */}
         <section id='home_section' >
+
+        </section>
+        <section id='about_section'>
           {/* <div className={css.item}
             data-aos="fade-right"
             data-aos-anchor-placement="top-bottom"
           >
 
           </div> */}
-          asd
         </section>
+        <section id='projects_section'>        </section>
+        <section id='contacts_section'>        </section>
         <div className={css.space}></div>
       </div>
 
