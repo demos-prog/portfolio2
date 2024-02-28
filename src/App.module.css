@@ -121,3 +121,7 @@
   flex-direction: column;
   gap: 10px;
 }
+
+b {
+  color: var(--color2);
+}

@@ -1,19 +1,15 @@
 import React, { Suspense, useState } from 'react';
 import handIcon from '../src/assets/images/waving_hand.png';
-import AOS from 'aos';
 import css from './App.module.css';
 
 const LazyHeader = React.lazy(() => import('./components/Header/Header'));
 const LazyFlyingIcons = React.lazy(() => import('./components/FlyingIcons/FlyingIcons'));
 const LazyVideo = React.lazy(() => import('./components/BGVideo/BGVideo'));
+const LazyAbout = React.lazy(() => import('./components/About/About'));
+
 
 function App() {
   const [lang, setLang] = useState<'ru' | 'eng'>('eng');
-
-
-  AOS.init({
-    duration: 1200,
-  })
 
 
   return (
@@ -59,14 +55,11 @@ function App() {
           )}
         </div >
       </section >
-      <section id='about_section'>
-        {/* <div className={css.item}
-            data-aos="fade-right"
-            data-aos-anchor-placement="top-bottom"
-          >
 
-          </div> */}
-      </section>
+      <Suspense fallback={null}>
+        <LazyAbout lang={lang} />
+      </Suspense>
+
       <section id='projects_section'>        </section>
       <section id='contacts_section'>        </section>
     </>
