@@ -156,3 +156,9 @@ h1::after {
   font-size: 15px;
   transform: rotate(-90deg);
 }
+
+@media (max-width: 900px) {
+  header>h1 {
+    display: none;
+  }
+}
