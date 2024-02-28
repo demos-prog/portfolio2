@@ -19,9 +19,9 @@ const About: React.FC<AboutProps> = ({ lang }) => {
     <section id='about_section' className={css.aboutSection}>
       <h2>
         {lang === 'ru' ? (
-          "Обо мне/ мои скилы"
+          "Мои скилы"
         ) : (
-          'About me/ my skills'
+          'My skills'
         )}
       </h2>
 
