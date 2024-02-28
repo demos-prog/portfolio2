@@ -1,3 +1,24 @@
-.skillWrap{
+.skillWrap {
   display: flex;
+  gap: 10px;
+  height: 40px;
+}
+
+.verticalLine {
+  width: 4px;
+  background-color: var(--color1);
+}
+
+.skillBox {
+  width: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.leftSide{
+  justify-content: flex-end;
+}
+
+.rightSide {
+  justify-content: flex-start;
 }

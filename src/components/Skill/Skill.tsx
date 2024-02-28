@@ -1,9 +1,10 @@
 import React from 'react';
+import Grade from '../Grade/Grade';
 import css from './Skill.module.css';
 
 type SkillProps = {
   title: string,
-  grade: 0 | 1 | 2 | 3 | 4 | 5,
+  grade: 1 | 2 | 3 | 4 | 5,
 }
 
 const Skill: React.FC<SkillProps> = ({ title, grade }) => {
@@ -11,8 +12,13 @@ const Skill: React.FC<SkillProps> = ({ title, grade }) => {
 
   return (
     <div className={css.skillWrap}>
-      <span>{title}</span>
-      {grade}
+      <div className={`${css.skillBox} ${css.leftSide}`}>
+        <span>{title}</span>
+      </div>
+      <div className={css.verticalLine} />
+      <div className={`${css.skillBox} ${css.rightSide}`}>
+        <Grade grade={grade} />
+      </div>
     </div>
   );
 };
