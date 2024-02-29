@@ -12,3 +12,8 @@
 .projectsSection>h2 {
   font-size: 30px;
 }
+
+#projectsWrap{
+  display: flex;
+  justify-content: space-between;
+}
