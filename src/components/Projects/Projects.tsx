@@ -1,5 +1,6 @@
 import React from 'react';
 import Project from '../Project/Project';
+import ecommerceIcon from '../../assets/images/ecommerce.jpg';
 import css from './Projects.module.css';
 
 type ProjectsProps = {
@@ -9,7 +10,11 @@ type ProjectsProps = {
 const projects = [
   {
     titleRU: 'Магазин',
-    titleENG: 'Ecommerce'
+    titleENG: 'Ecommerce',
+    img: ecommerceIcon,
+    projectLink: 'https://web-store-one.vercel.app/',
+    gitHubLink: 'https://github.com/demos-prog/web_store',
+    skills: ['React', 'Typescript', 'REST API', 'React-query']
   }
 ]
 
@@ -18,7 +23,7 @@ const Projects: React.FC<ProjectsProps> = ({ lang }) => {
 
   return (
     <section id='projects_section' className={css.projectsSection}>
-      {lang === 'eng' ? <h2>Projects</h2> : <h2>Проекты</h2>}
+      <h2>{lang === 'eng' ? 'Projects' : 'Проекты'}</h2>
 
       <div id={css.projectsWrap}>
         {projects.map((project, i) => {
@@ -27,6 +32,10 @@ const Projects: React.FC<ProjectsProps> = ({ lang }) => {
               lang={lang}
               titleRU={project.titleRU}
               titleENG={project.titleENG}
+              img={project.img}
+              projectLink={project.projectLink}
+              gitHubLink={project.gitHubLink}
+              skills={project.skills}
             />
           )
         })}
