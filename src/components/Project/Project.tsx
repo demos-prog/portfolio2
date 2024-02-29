@@ -15,7 +15,7 @@ type ProjectProps = {
 }
 
 AOS.init({
-  duration: 1200,
+  duration: 1000,
 })
 
 const Project: React.FC<ProjectProps> = ({

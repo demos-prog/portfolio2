@@ -15,7 +15,7 @@ function App() {
 
 
   return (
-    <>
+    <div style={{ overflowX: 'hidden' }}>
       {/* z-index: -100; */}
       <Suspense fallback={<div id={css.backGround} />}>
         <LazyVideo />
@@ -69,7 +69,7 @@ function App() {
       <Suspense fallback={null}>
         <LazyContacts lang={lang} />
       </Suspense>
-    </>
+    </div>
   );
 }
 
