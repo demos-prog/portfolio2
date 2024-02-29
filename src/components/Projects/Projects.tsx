@@ -1,6 +1,9 @@
 import React from 'react';
 import Project from '../Project/Project';
 import ecommerceIcon from '../../assets/images/ecommerce.jpg';
+import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
+import weatherIcon from '../../assets/images/weather.jpg';
+import todoIcon from '../../assets/images/todo_app.jpg';
 import css from './Projects.module.css';
 
 type ProjectsProps = {
@@ -15,7 +18,31 @@ const projects = [
     projectLink: 'https://web-store-one.vercel.app/',
     gitHubLink: 'https://github.com/demos-prog/web_store',
     skills: ['React', 'Typescript', 'REST API', 'React-query']
-  }
+  },
+  {
+    titleRU: 'Крестики-Нолики',
+    titleENG: 'Tik-Tak-Toe',
+    img: tictactoeIcon,
+    projectLink: 'https://tic-tac-toe-nine-rosy.vercel.app/',
+    gitHubLink: 'https://github.com/demos-prog/tic_tac_toe',
+    skills: ['React', 'Typescript']
+  },
+  {
+    titleRU: 'Прогноз погоды',
+    titleENG: 'Weather forecast',
+    img: weatherIcon,
+    projectLink: 'https://weather-app2-ashy.vercel.app/',
+    gitHubLink: 'https://github.com/demos-prog/weather-app2',
+    skills: ['React', 'REST API']
+  },
+  {
+    titleRU: 'Список дел',
+    titleENG: 'ToDo list',
+    img: todoIcon,
+    projectLink: 'https://todolist-app-flame.vercel.app/',
+    gitHubLink: 'https://github.com/demos-prog/todolist-app',
+    skills: ['React']
+  },
 ]
 
 const Projects: React.FC<ProjectsProps> = ({ lang }) => {
