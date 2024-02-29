@@ -23,7 +23,7 @@ const Projects: React.FC<ProjectsProps> = ({ lang }) => {
 
   return (
     <section id='projects_section' className={css.projectsSection}>
-      <h2>{lang === 'eng' ? 'Projects' : 'Проекты'}</h2>
+      <h2>{lang === 'eng' ? 'Some of my projects' : 'Некоторые из моих проектов'}</h2>
 
       <div id={css.projectsWrap}>
         {projects.map((project, i) => {

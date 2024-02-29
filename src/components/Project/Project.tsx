@@ -1,4 +1,5 @@
 import React from 'react';
+import ProjectSkill from '../ProjectSkill/ProjectSkill';
 import css from './Project.module.css';
 
 type ProjectProps = {
@@ -27,13 +28,9 @@ const Project: React.FC<ProjectProps> = ({
         GitHub
       </a>
 
-      <div>
+      <div className={css.skills}>
         {skills.map((skill, i) => {
-          return (
-            <div key={i}>
-              {skill}
-            </div>
-          )
+          return <ProjectSkill skill={skill} key={i} />
         })}
       </div>
     </div>

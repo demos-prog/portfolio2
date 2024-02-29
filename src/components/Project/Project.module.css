@@ -2,6 +2,9 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  width: 280px;
+  background-color: brown;
+  padding: 15px;
 }
 
 .img {
@@ -12,4 +15,11 @@
 
 .gitHub {
   color: white;
+}
+
+.skills{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px 5px;
 }
