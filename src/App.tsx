@@ -7,6 +7,7 @@ const LazyFlyingIcons = React.lazy(() => import('./components/FlyingIcons/Flying
 const LazyVideo = React.lazy(() => import('./components/BGVideo/BGVideo'));
 const LazyAbout = React.lazy(() => import('./components/About/About'));
 const LazyProjects = React.lazy(() => import('./components/Projects/Projects'));
+const LazyContacts = React.lazy(() => import('./components/ContactsSection/ContactsSection'));
 
 
 function App() {
@@ -65,8 +66,9 @@ function App() {
         <LazyProjects lang={lang} />
       </Suspense>
 
-      
-      <section id='contacts_section'>        </section>
+      <Suspense fallback={null}>
+        <LazyContacts lang={lang} />
+      </Suspense>
     </>
   );
 }
