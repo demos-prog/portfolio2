@@ -6,11 +6,11 @@ type GradeProps = {
 }
 
 const grades = [
-  <div className={css.emptyGrade} />,
-  <div className={css.emptyGrade} />,
-  <div className={css.emptyGrade} />,
-  <div className={css.emptyGrade} />,
-  <div className={css.emptyGrade} />,
+  <div key={0} className={css.emptyGrade} />,
+  <div key={1} className={css.emptyGrade} />,
+  <div key={2} className={css.emptyGrade} />,
+  <div key={3} className={css.emptyGrade} />,
+  <div key={4} className={css.emptyGrade} />,
 ]
 
 const Grade: React.FC<GradeProps> = ({ grade }) => {

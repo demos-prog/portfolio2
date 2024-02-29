@@ -6,6 +6,7 @@ const LazyHeader = React.lazy(() => import('./components/Header/Header'));
 const LazyFlyingIcons = React.lazy(() => import('./components/FlyingIcons/FlyingIcons'));
 const LazyVideo = React.lazy(() => import('./components/BGVideo/BGVideo'));
 const LazyAbout = React.lazy(() => import('./components/About/About'));
+const LazyProjects = React.lazy(() => import('./components/Projects/Projects'));
 
 
 function App() {
@@ -60,7 +61,11 @@ function App() {
         <LazyAbout lang={lang} />
       </Suspense>
 
-      <section id='projects_section'>        </section>
+      <Suspense fallback={null}>
+        <LazyProjects lang={lang} />
+      </Suspense>
+
+      
       <section id='contacts_section'>        </section>
     </>
   );
