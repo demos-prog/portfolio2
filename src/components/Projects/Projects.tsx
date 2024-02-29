@@ -56,6 +56,7 @@ const Projects: React.FC<ProjectsProps> = ({ lang }) => {
         {projects.map((project, i) => {
           return (
             <Project key={i}
+              i={i}
               lang={lang}
               titleRU={project.titleRU}
               titleENG={project.titleENG}

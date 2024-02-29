@@ -1,4 +1,5 @@
 import React from 'react';
+import AOS from 'aos';
 import ProjectSkill from '../ProjectSkill/ProjectSkill';
 import css from './Project.module.css';
 
@@ -10,14 +11,22 @@ type ProjectProps = {
   projectLink: string,
   gitHubLink: string,
   skills: string[],
+  i: number,
 }
 
+AOS.init({
+  duration: 1200,
+})
+
 const Project: React.FC<ProjectProps> = ({
-  lang, titleRU, titleENG, img, projectLink, gitHubLink, skills }) => {
+  lang, titleRU, titleENG, img, projectLink, gitHubLink, skills, i }) => {
 
 
   return (
-    <div className={css.project}>
+    <div
+      data-aos="fade-right"
+      data-aos-delay={i * 200}
+      className={css.project}>
       <span className={css.title}>{lang === 'ru' ? titleRU : titleENG}</span>
 
       <a href={projectLink} target="_blank">

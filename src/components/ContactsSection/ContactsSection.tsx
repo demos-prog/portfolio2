@@ -1,4 +1,5 @@
 import React from 'react';
+import AOS from 'aos';
 import gitIcon from '../../assets/images/github_rep_icon.svg';
 import linkedInIcon from '../../assets/images/linkedin_icon.svg';
 import telegramIcon from '../../assets/images/telegram_icon.svg';
@@ -9,11 +10,14 @@ type ContactsSectionProps = {
   lang: 'ru' | 'eng';
 }
 
+AOS.init({
+  duration: 1200,
+})
+
 const ContactsSection: React.FC<ContactsSectionProps> = ({ lang }) => {
 
-
   return (
-    <section id='contacts_section' className={css.contacts}>
+    <section data-aos="fade-left" id='contacts_section' className={css.contacts}>
       <h2>{lang === 'ru' ? 'Контакты' : 'Contacts'}</h2>
       <p>{lang === 'ru' ? ('Телефон') : ('Phone')}: +375 (25) 517-11-52</p>
       <p>{lang === 'ru' ? ('Почта') : ('Email')}: demosne@gmail.com</p>
