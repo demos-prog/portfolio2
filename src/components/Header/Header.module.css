@@ -157,6 +157,23 @@ h1::after {
   transform: rotate(-90deg);
 }
 
+#btns {
+  display: flex;
+  gap: 20px;
+}
+
+#btns>a {
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: .2s;
+}
+
+#btns>a:hover {
+  color: var(--color1);
+}
+
 @media (max-width: 900px) {
   header>h1 {
     display: none;

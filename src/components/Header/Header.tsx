@@ -71,11 +71,24 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
             </ul>
           </nav>
 
-          <div className={css.lang_wrap} onClick={handleLang}        >
-            <div className={css.langItem}>Rus</div>
-            <div className={css.langItem}>Eng</div>
-            <div style={lang === 'ru' ? { left: '3px', backgroundColor: '#e73c7e' } : { left: '39px', backgroundColor: '#23d5ab' }} className={css.selectedLng}>{getLangname()}</div>
+          <div id={css.btns}>
+            <a
+              href={lang === 'ru' ? (
+                'https://drive.google.com/file/d/1KJnaOLb0rdxcYDFlQ7MH4YLUEyuK9PH9/view?usp=sharing'
+              ) : (
+                'https://drive.google.com/file/d/1CcxKpCyPunNyNluxOYRKBH3cvCyaqSUb/view?usp=sharing'
+              )}
+              target="_blank"
+            >
+              {lang === 'ru' ? ('Загрузить резюме') : ('Download CV')}
+            </a>
+            <div className={css.lang_wrap} onClick={handleLang}>
+              <div className={css.langItem}>Rus</div>
+              <div className={css.langItem}>Eng</div>
+              <div style={lang === 'ru' ? { left: '3px', backgroundColor: '#e73c7e' } : { left: '39px', backgroundColor: '#23d5ab' }} className={css.selectedLng}>{getLangname()}</div>
+            </div>
           </div>
+
 
         </header>
       </div>
