@@ -109,6 +109,7 @@
 }
 
 #homeWrap {
+  text-align: center;
   text-wrap: stable;
   font-size: 20px;
   width: 70%;
@@ -124,4 +125,10 @@
 
 b {
   color: var(--color2);
+}
+
+@media (max-width: 500px) {
+  #homeWrap{
+    width: 95%;
+  }
 }
