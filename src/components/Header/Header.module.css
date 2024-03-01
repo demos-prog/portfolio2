@@ -227,3 +227,18 @@ h1::after {
     gap: 4px;
   }
 }
+
+@media (max-width: 350px) {
+  .h_wrap{
+    width: 95%;
+    left: 2.5%;
+  }
+  header{
+    padding: 5px 10px;
+  }
+
+  #bugerMenu{
+    top: 60px;
+    left: 3%;
+  }
+}
