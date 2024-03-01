@@ -3,7 +3,7 @@ import Project from '../Project/Project';
 import ecommerceIcon from '../../assets/images/ecommerce.jpg';
 import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
 import weatherIcon from '../../assets/images/weather.jpg';
-import todoIcon from '../../assets/images/todo_app.jpg';
+import todoIcon from '../../assets/images/todoApp.jpg';
 import css from './Projects.module.css';
 
 type ProjectsProps = {
