@@ -15,11 +15,15 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
-    setIsHovered(true);
+    if (!defaultHover) {
+      setIsHovered(true);
+    }
   }
 
   const handleMouseLeave = () => {
-    setIsHovered(false);
+    if (!defaultHover) {
+      setIsHovered(false);
+    }
   }
 
   const getColor = () => {
