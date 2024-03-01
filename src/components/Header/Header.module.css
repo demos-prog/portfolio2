@@ -174,8 +174,56 @@ h1::after {
   color: var(--color1);
 }
 
+#burger {
+  display: none;
+}
+
+#bugerMenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  background-color: black;
+  padding: 20px;
+  z-index: 100;
+  top: 75px;
+  left: 10%;
+}
+
+.bar {
+  width: 30px;
+  height: 5px;
+}
+
+.bar:nth-child(1) {
+  border-top-right-radius: 5px;
+  background-color: var(--color1);
+}
+
+.bar:nth-child(2) {
+  background-color: var(--color2);
+}
+
+.bar:nth-child(3) {
+  background-color: var(--color1);
+  border-bottom-left-radius: 5px;
+}
+
 @media (max-width: 900px) {
   header>h1 {
     display: none;
+  }
+}
+
+@media (max-width: 700px) {
+  #navBar {
+    display: none;
+  }
+
+  #burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
   }
 }

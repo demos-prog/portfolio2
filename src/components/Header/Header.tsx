@@ -19,8 +19,9 @@ type HeaderProps = {
 
 const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
   const [y, setY] = useState(document.scrollingElement ? document.scrollingElement.scrollHeight : 0);
-  const [scrollDirection, setScrollDirection] = useState(false);
-  const [show, setShow] = useState(false);
+  const [scrollDirection, setScrollDirection] = useState<boolean>(false);
+  const [show, setShow] = useState<boolean>(false);
+  const [isBurgerOpen, setIsBurgerOpen] = useState<boolean>(false);
 
   const handleOpenContacts = () => {
     setShow(prev => !prev)
@@ -32,7 +33,8 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
     } else if (y < window.scrollY) {
       setScrollDirection(true);
     }
-    setY(window.scrollY)
+    setY(window.scrollY);
+    setIsBurgerOpen(false);
   }, [y]);
 
   const handleLang = () => {
@@ -41,6 +43,10 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
 
   const getLangname = () => {
     return lang === 'ru' ? 'Rus' : 'Eng';
+  }
+
+  const handleBurger = () => {
+    setIsBurgerOpen(prev => !prev);
   }
 
 
@@ -69,6 +75,11 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
               <LiItem lang={lang} href={'#projects_section'} ruName={'Проекты'} engName={'Projects'} img={projectsIcon} color={'#23a6d5'} />
               <LiItem lang={lang} href={'#contacts_section'} ruName={'Контакты'} engName={'Contacts'} img={contactIcon} color={'#23d5ab'} />
             </ul>
+            <div id={css.burger} onClick={handleBurger}>
+              <div className={css.bar} />
+              <div className={css.bar} />
+              <div className={css.bar} />
+            </div>
           </nav>
 
           <div id={css.btns}>
@@ -92,6 +103,15 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
 
         </header>
       </div>
+
+      {isBurgerOpen && (
+        <ul id={css.bugerMenu}>
+          <LiItem defaultHover={true} lang={lang} href={'#home_section'} ruName={'Главная'} engName={'Home'} img={homeIcon} color={'#ee7752'} />
+          <LiItem defaultHover={true} lang={lang} href={'#about_section'} ruName={'Скилы'} engName={'Skills'} img={aboutIcon} color={'#e73c7e'} />
+          <LiItem defaultHover={true} lang={lang} href={'#projects_section'} ruName={'Проекты'} engName={'Projects'} img={projectsIcon} color={'#23a6d5'} />
+          <LiItem defaultHover={true} lang={lang} href={'#contacts_section'} ruName={'Контакты'} engName={'Contacts'} img={contactIcon} color={'#23d5ab'} />
+        </ul>
+      )}
 
       <div style={show ? { left: 0 } : { left: '-50px' }} id={css.contactsWrap}>
         <div id={css.contacts}>

@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import css from './LiItem.module.css';
 
 type LiItemProps = {
@@ -8,9 +8,10 @@ type LiItemProps = {
   engName: string,
   img: string,
   color: string,
+  defaultHover?: boolean,
 }
 
-const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color }) => {
+const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color, defaultHover }) => {
   const [isHovered, setIsHovered] = useState<boolean>(false);
 
   const handleMouseEnter = () => {
@@ -38,7 +39,7 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
 
   const handleSmoothScroll = () => {
     const element = document.querySelector(href);
-    
+
     if (element) {
       element.scrollIntoView({
         behavior: 'smooth',
@@ -46,6 +47,12 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
       });
     }
   }
+
+  useEffect(() => {
+    if (defaultHover) {
+      setIsHovered(true);
+    }
+  }, [defaultHover])
 
   return (
     <li
