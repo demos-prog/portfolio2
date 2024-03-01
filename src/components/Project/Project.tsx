@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import AOS from 'aos';
 import ProjectSkill from '../ProjectSkill/ProjectSkill';
 import css from './Project.module.css';
@@ -20,12 +20,20 @@ AOS.init({
 
 const Project: React.FC<ProjectProps> = ({
   lang, titleRU, titleENG, img, projectLink, gitHubLink, skills, i }) => {
+  const windowWidth = useRef(window.innerWidth);
 
+  const getAnimDelay = () => {
+    if (windowWidth.current < 750) {
+      return 0
+    } else {
+      return i * 200
+    }
+  }
 
   return (
     <div
       data-aos="fade-right"
-      data-aos-delay={i * 200}
+      data-aos-delay={getAnimDelay()}
       className={css.project}>
       <span className={css.title}>{lang === 'ru' ? titleRU : titleENG}</span>
 
