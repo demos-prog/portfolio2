@@ -38,7 +38,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
           <Skill title={'RESP API'} grade={3} />
           <Skill title={'TypeScript'} grade={3} />
           <Skill title={'GIT'} grade={3} />
-          <Skill title={'Node JS'} grade={2} />
+          <Skill title={'Node JS'} grade={1} />
           <Skill title={'Java'} grade={2} />
           <Skill title={'English'} grade={3} />
         </div>
