@@ -84,6 +84,7 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
 
           <div id={css.btns}>
             <a
+              aria-label='Download the resume'
               href={lang === 'ru' ? (
                 'https://drive.google.com/file/d/1KJnaOLb0rdxcYDFlQ7MH4YLUEyuK9PH9/view?usp=sharing'
               ) : (
@@ -115,17 +116,17 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
 
       <div style={show ? { left: 0 } : { left: '-50px' }} id={css.contactsWrap}>
         <div id={css.contacts}>
-          <a target="_blank" href="https://t.me/Dmitry_web">
+          <a aria-label='Telegram' target="_blank" href="https://t.me/Dmitry_web">
             <img className={css.contImage} src={telegramIcon} alt="telegram" />
           </a>
-          <a target="_blank"
+          <a aria-label='Linkedin' target="_blank"
             href="https://www.linkedin.com/in/%D0%B4%D0%BC%D0%B8%D1%82%D1%80%D0%B8%D0%B9-%D0%B1%D1%83%D1%80%D0%BB%D1%8B%D0%BA%D0%BE-972461214">
             <img className={css.contImage} src={linkedInIcon} alt="linkedin" />
           </a>
-          <a target="_blank" href="viber://add?number=375255171152">
+          <a aria-label='Viber' target="_blank" href="viber://add?number=375255171152">
             <img className={css.contImage} src={viberIcon} alt="viber" />
           </a>
-          <a target="_blank" href="https://github.com/demos-prog">
+          <a aria-label='GitHub' target="_blank" href="https://github.com/demos-prog">
             <img className={css.contImage} src={gitIcon} alt="git" />
           </a>
         </div>

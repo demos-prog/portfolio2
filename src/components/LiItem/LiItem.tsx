@@ -66,7 +66,7 @@ const LiItem: React.FC<LiItemProps> = ({ lang, href, ruName, engName, img, color
       className={isHovered ? `${css.item} ${css.item_hover} scroll_to` : `${css.item} scroll_to`}
       style={isHovered ? { border: `1px solid ${color}` } : {}}
     >
-      <a href={href} style={{ color: color }}>
+      <a aria-label={`Go to ${engName}`} href={href} style={{ color: color }}>
         <img style={{ filter: getColor() }} src={img} alt={engName} />
         {isHovered && (lang === 'ru' ? ruName : engName)}
       </a>
