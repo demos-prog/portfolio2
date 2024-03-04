@@ -193,6 +193,7 @@ h1::after {
 .bar {
   width: 30px;
   height: 5px;
+  transition: .5s;
 }
 
 .bar:nth-child(1) {

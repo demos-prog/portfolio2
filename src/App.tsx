@@ -13,7 +13,7 @@ const LazyContacts = React.lazy(() => import('./components/ContactsSection/Conta
 function App() {
   const [lang, setLang] = useState<'ru' | 'eng'>('eng');
 
-
+  
   return (
     <div style={{ overflowX: 'hidden' }}>
       {/* z-index: -100; */}

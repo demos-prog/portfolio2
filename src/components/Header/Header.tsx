@@ -77,8 +77,8 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
             </ul>
             <div id={css.burger} onClick={handleBurger}>
               <div className={css.bar} />
-              <div className={css.bar} />
-              <div className={css.bar} />
+              <div style={isBurgerOpen ? { width: '20px' } : {}} className={css.bar} />
+              <div style={isBurgerOpen ? { width: '10px' } : {}} className={css.bar} />
             </div>
           </nav>
 
