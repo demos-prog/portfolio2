@@ -13,15 +13,16 @@
 }
 
 .skillBox {
-  width: 100px;
   display: flex;
   align-items: center;
 }
 
 .leftSide {
+  width: 120px;
   justify-content: flex-end;
 }
 
 .rightSide {
+  width: 100px;
   justify-content: flex-start;
 }

@@ -1,7 +1,7 @@
 .aboutSection {
   font-size: 20px;
   color: white;
-  height: 100vh;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -24,20 +24,32 @@
   height: 95%;
 }
 
-#skillsWrap {
+#wrapper {
   position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+#skillsWrap {
   display: flex;
   flex-direction: column;
   background-color: black;
   padding: 10px;
 }
 
-#tit{
+#tit {
   font-size: 30px;
 }
 
 @media (max-width:700px) {
-  #skills{
+  #skills {
     margin-top: 10px;
+  }
+}
+@media (max-width:684px) {
+  .aboutSection {
+    height: 1300px;
   }
 }
