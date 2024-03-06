@@ -13,7 +13,7 @@ const Skill: React.FC<SkillProps> = ({ title, grade }) => {
   return (
     <div className={css.skillWrap}>
       <div className={`${css.skillBox} ${css.leftSide}`}>
-        <span>{title}</span>
+        <span className={css.text}>{title}</span>
       </div>
       <div className={css.verticalLine} />
       <div className={`${css.skillBox} ${css.rightSide}`}>

@@ -26,3 +26,7 @@
   width: 100px;
   justify-content: flex-start;
 }
+
+.text{
+  text-align: end;
+}
