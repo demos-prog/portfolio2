@@ -42,11 +42,11 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             <Skill title={'Next JS'} grade={2} />
             <Skill title={'Styled Components'} grade={4} />
             <Skill title={'TypeScript'} grade={4} />
-            <Skill title={'Redux'} grade={2} />
+            <Skill title={'Redux'} grade={3} />
           </div>
           <div id={css.skillsWrap}>
-            <Skill title={'Recoil'} grade={2} />
-            <Skill title={'Zustand'} grade={2} />
+            <Skill title={'Recoil'} grade={3} />
+            <Skill title={'Zustand'} grade={3} />
             <Skill title={'GitHub'} grade={3} />
             <Skill title={'Jest'} grade={2} />
             <Skill title={'Vite'} grade={4} />
