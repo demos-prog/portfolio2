@@ -38,7 +38,7 @@ const Project: React.FC<ProjectProps> = ({
       <span className={css.title}>{lang === 'ru' ? titleRU : titleENG}</span>
 
       <a href={projectLink} target="_blank">
-        <img className={css.img} src={img} alt="" />
+        <img className={css.img} src={img} alt={titleENG} />
       </a>
 
       <a className={css.gitHub} href={gitHubLink} target="_blank" >
