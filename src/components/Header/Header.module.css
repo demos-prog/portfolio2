@@ -37,6 +37,7 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
   width: 100%;
   color: #FFF;
   padding: 10px 20px;
