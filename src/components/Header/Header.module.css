@@ -149,10 +149,6 @@ h1::after {
   transition: .2s;
 }
 
-#contactsBtn:hover {
-  border: 2px solid var(--color3);
-}
-
 #contactText {
   font-size: 15px;
   transform: rotate(-90deg);
