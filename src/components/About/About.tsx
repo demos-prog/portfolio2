@@ -39,7 +39,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             <Skill title={'JavaScript'} grade={5}/>
             <Skill title={'React JS'} grade={4}/>
             <Skill title={'React Router'} grade={4}/>
-            <Skill title={'Next JS'} grade={2}/>
+            <Skill title={'Next JS'} grade={3}/>
             <Skill title={'Styled Components'} grade={4}/>
             <Skill title={'TypeScript'} grade={4}/>
             <Skill title={'Redux'} grade={3}/>
@@ -55,7 +55,7 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             <Skill title={'REST API'} grade={4}/>
             <Skill title={'Graph QL'} grade={2}/>
             <Skill title={'Node JS'} grade={2}/>
-            <Skill title={'Java'} grade={3}/>
+            <Skill title={'Java (core)'} grade={3}/>
             <Skill title={'English'} grade={3}/>
           </div>
         </div>
