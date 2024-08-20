@@ -1,6 +1,5 @@
 import React from 'react';
 import Project from '../Project/Project';
-import ecommerceIcon from '../../assets/images/ecommerce.jpg';
 import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
 import weatherIcon from '../../assets/images/weather.jpg';
 import todoIcon from '../../assets/images/todoApp.jpg';
@@ -11,14 +10,14 @@ type ProjectsProps = {
 }
 
 const projects = [
-  {
-    titleRU: 'Магазин',
-    titleENG: 'Ecommerce',
-    img: ecommerceIcon,
-    projectLink: 'https://web-store-one.vercel.app/',
-    gitHubLink: 'https://github.com/demos-prog/web_store',
-    skills: ['React', 'Typescript', 'REST API', 'React-query']
-  },
+  // {
+  //   titleRU: 'Магазин',
+  //   titleENG: 'Ecommerce',
+  //   img: ecommerceIcon,
+  //   projectLink: 'https://web-store-one.vercel.app/',
+  //   gitHubLink: 'https://github.com/demos-prog/web_store',
+  //   skills: ['React', 'Typescript', 'REST API', 'React-query']
+  // },
   {
     titleRU: 'Крестики-Нолики',
     titleENG: 'Tik-Tak-Toe',
