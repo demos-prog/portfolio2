@@ -42,7 +42,7 @@ const Project: React.FC<ProjectProps> = ({
       </a>
 
       <a className={css.gitHub} href={gitHubLink} target="_blank" aria-label={'GitHub'}>
-        GitHub
+        <u>GitHub</u>
       </a>
 
       <div className={css.skills}>
