@@ -15,7 +15,7 @@ const projects = [
     titleRU: 'Блог',
     titleENG: 'Blog',
     img: blog,
-    projectLink: 'https://nest-client-orpin.vercel.app/user',
+    projectLink: 'https://nest-client-orpin.vercel.app/',
     gitHubLink: 'https://github.com/demos-prog/nest_task',
     skills: ['React', 'Nest', 'PostgreSQL', 'Prisma']
   },

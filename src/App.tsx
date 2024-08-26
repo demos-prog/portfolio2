@@ -41,7 +41,7 @@ function App() {
                 <img id={css.hand} src={handIcon} alt="hello" />
               </div>
               <h2>Меня зовут <b>Дмитрий Бурлыко</b></h2>
-              <p>&nbsp;&nbsp;Я <b>Фронт-енд/Фулл-стек разработчик</b> и здесь Вы можете найти некоторую информацию обо мне.</p>
+              <p>&nbsp;&nbsp;Я <b>Фулл-стек разработчик</b> и здесь Вы можете найти некоторую информацию обо мне.</p>
               <p>Добро пожаловать!</p>
             </>
           ) : (
@@ -51,7 +51,7 @@ function App() {
                 <img id={css.hand} src={handIcon} alt="hello" />
               </div>
               <h2>My name is <b>Dmitry Burlyko</b></h2>
-              <p>&nbsp;&nbsp;I'm a <b>Front-End/Full-stack web developer</b> and here you can find some information about me.</p>
+              <p>&nbsp;&nbsp;I'm a <b>Full-stack web developer</b> and here you can find some information about me.</p>
               <p>You're welcome!</p>
             </>
           )}
