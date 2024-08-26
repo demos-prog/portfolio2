@@ -12,8 +12,8 @@ type ProjectsProps = {
 
 const projects = [
   {
-    titleRU: 'Магазин',
-    titleENG: 'Ecommerce',
+    titleRU: 'Блог',
+    titleENG: 'Blog',
     img: blog,
     projectLink: 'https://nest-client-orpin.vercel.app/user',
     gitHubLink: 'https://github.com/demos-prog/nest_task',
