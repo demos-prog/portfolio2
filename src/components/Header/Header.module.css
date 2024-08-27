@@ -69,7 +69,7 @@ h1::before {
 h1::after {
   transform: rotate(30deg);
   position: absolute;
-  content: 'Front-End';
+  content: 'Full-stack';
   font-size: 12px;
   left: -72px;
   top: 40px;
