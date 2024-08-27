@@ -44,14 +44,6 @@ const projects = [
     gitHubLink: 'https://github.com/demos-prog/weather-app2',
     skills: ['React', 'REST API']
   },
-  {
-    titleRU: 'Список дел',
-    titleENG: 'ToDo list',
-    img: todoIcon,
-    projectLink: 'https://todolist-app-flame.vercel.app/',
-    gitHubLink: 'https://github.com/demos-prog/todolist-app',
-    skills: ['React']
-  },
 ]
 
 const Projects: React.FC<ProjectsProps> = ({ lang }) => {
