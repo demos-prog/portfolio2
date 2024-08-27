@@ -4,7 +4,6 @@ import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
 import weatherIcon from '../../assets/images/weather.jpg';
 import blog from '../../assets/images/blog.jpg';
 import todoMERN from '../../assets/images/todoMERN.jpg';
-import todoIcon from '../../assets/images/todoApp.jpg';
 import css from './Projects.module.css';
 
 type ProjectsProps = {
