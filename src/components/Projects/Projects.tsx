@@ -3,7 +3,7 @@ import Project from '../Project/Project';
 import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
 import weatherIcon from '../../assets/images/weather.jpg';
 import blog from '../../assets/images/blog.jpg';
-import todoMERN '../../assets/images/todoMERN.jpg';
+import todoMERN from '../../assets/images/todoMERN.jpg';
 import todoIcon from '../../assets/images/todoApp.jpg';
 import css from './Projects.module.css';
 
