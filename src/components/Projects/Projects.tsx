@@ -3,6 +3,7 @@ import Project from '../Project/Project';
 import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
 import weatherIcon from '../../assets/images/weather.jpg';
 import blog from '../../assets/images/blog.jpg';
+import todoMERN '../../assets/images/todoMERN.jpg';
 import todoIcon from '../../assets/images/todoApp.jpg';
 import css from './Projects.module.css';
 
@@ -18,6 +19,14 @@ const projects = [
     projectLink: 'https://nest-client-orpin.vercel.app/',
     gitHubLink: 'https://github.com/demos-prog/nest_task',
     skills: ['React', 'Nest', 'PostgreSQL', 'Prisma']
+  },
+   {
+    titleRU: 'ToDo list (MERN)',
+    titleENG: 'ToDo list (MERN)',
+    img: todoMERN,
+    projectLink: 'https://mern-to-do-app-sable.vercel.app/',
+    gitHubLink: 'https://github.com/demos-prog/MERN-ToDo-app.git',
+    skills: ['React', 'Express', 'MongoDB']
   },
   {
     titleRU: 'Крестики-Нолики',
