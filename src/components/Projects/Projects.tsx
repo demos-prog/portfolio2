@@ -2,7 +2,7 @@ import React from 'react';
 import Project from '../Project/Project';
 import tictactoeIcon from '../../assets/images/tic-tac-toe.jpg';
 import weatherIcon from '../../assets/images/weather.jpg';
-import blog from '../../assets/images/blog.jpg';
+// import blog from '../../assets/images/blog.jpg';
 import todoMERN from '../../assets/images/todoMERN.jpg';
 import css from './Projects.module.css';
 
@@ -11,14 +11,14 @@ type ProjectsProps = {
 }
 
 const projects = [
-  {
-    titleRU: 'Блог',
-    titleENG: 'Blog',
-    img: blog,
-    projectLink: 'https://nest-client-orpin.vercel.app/',
-    gitHubLink: 'https://github.com/demos-prog/nest_task',
-    skills: ['React', 'Nest', 'PostgreSQL', 'Prisma']
-  },
+  // {
+  //   titleRU: 'Блог',
+  //   titleENG: 'Blog',
+  //   img: blog,
+  //   projectLink: 'https://nest-client-orpin.vercel.app/',
+  //   gitHubLink: 'https://github.com/demos-prog/nest_task',
+  //   skills: ['React', 'Nest', 'PostgreSQL', 'Prisma']
+  // },
    {
     titleRU: 'ToDo list (MERN)',
     titleENG: 'ToDo list (MERN)',

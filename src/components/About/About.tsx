@@ -34,20 +34,17 @@ const About: React.FC<AboutProps> = ({ lang }) => {
           <div id={css.skillsWrap}>
             <Skill title={'HTML'} grade={5}/>
             <Skill title={'CSS'} grade={5}/>
-            <Skill title={'SCSS'} grade={4}/>
-            <Skill title={'CSS modulse'} grade={3}/>
             <Skill title={'JavaScript'} grade={5}/>
             <Skill title={'React JS'} grade={4}/>
             <Skill title={'React Router'} grade={4}/>
-            <Skill title={'Next JS'} grade={3}/>
             <Skill title={'Styled Components'} grade={4}/>
             <Skill title={'TypeScript'} grade={4}/>
             <Skill title={'Redux'} grade={3}/>
             <Skill title={'Recoil'} grade={3}/>
-          </div>
-          <div id={css.skillsWrap}>
             <Skill title={'Zustand'} grade={3}/>
             <Skill title={'GitHub'} grade={3}/>
+          </div>
+          <div id={css.skillsWrap}>
             <Skill title={'Vite'} grade={4}/>
             <Skill title={'Material UI'} grade={4}/>
             <Skill title={'Ant design'} grade={3}/>
@@ -56,7 +53,8 @@ const About: React.FC<AboutProps> = ({ lang }) => {
             <Skill title={'Nest'} grade={3}/>
             <Skill title={'Express'} grade={3}/>
             <Skill title={'MongoDB'} grade={3}/>
-            <Skill title={'Java (core)'} grade={2}/>
+            <Skill title={'PosgreSQL'} grade={3}/>
+            <Skill title={'Prisma'} grade={3}/>
             <Skill title={'English'} grade={3}/>
           </div>
         </div>
