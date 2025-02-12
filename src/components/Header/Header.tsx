@@ -86,13 +86,13 @@ const Header: React.FC<HeaderProps> = ({ lang, setLang }) => {
             <a
               aria-label='Download the resume'
               href={lang === 'ru' ? (
-                'https://drive.google.com/file/d/1KJnaOLb0rdxcYDFlQ7MH4YLUEyuK9PH9/view?usp=sharing'
+                'https://drive.google.com/file/d/1dYJ6E2vTB7CCl6pN1loTI9Ms75z9DWLm/view?usp=sharing'
               ) : (
-                'https://drive.google.com/file/d/1CcxKpCyPunNyNluxOYRKBH3cvCyaqSUb/view?usp=sharing'
+                'https://drive.google.com/file/d/1dYJ6E2vTB7CCl6pN1loTI9Ms75z9DWLm/view?usp=sharing'
               )}
               target="_blank"
             >
-              {lang === 'ru' ? ('Загрузить резюме') : ('Download CV')}
+              {lang === 'ru' ? ('Загрузить CV') : ('Download CV')}
             </a>
             <div className={css.lang_wrap} onClick={handleLang}>
               <div className={css.langItem}>Rus</div>
